@@ -1,0 +1,47 @@
+==========================================
+Trabajo: Cortar ficheros FASTQ
+Usuario: alumno11
+Nodo: mendel
+Fecha inicio: sáb dic 13 13:53:20 CET 2025
+==========================================
+
+Ficheros FASTQ originales:
+-rw-rw-r--. 1 alumno11 alumno11 3,5M dic 13 13:52 Sample1.fastq
+-rw-rw-r--. 1 alumno11 alumno11 3,2M dic 13 13:52 Sample2.fastq
+-rw-rw-r--. 1 alumno11 alumno11 3,5M dic 13 13:52 Sample3.fastq
+-rw-rw-r--. 1 alumno11 alumno11 3,2M dic 13 13:52 Sample4.fastq
+
+Procesando 4 ficheros en paralelo...
+
+Divisor calculado: 11
+
+[Proceso 3420847] Procesando Sample3.fastq...
+[Proceso 3420849] Procesando Sample2.fastq...
+[Proceso 3420849] Sample2.fastq completado: 100000 -> 9088 líneas
+[Proceso 3420847] Sample3.fastq completado: 100000 -> 9088 líneas
+srun: Job 12527 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=12527.4
+[Proceso 3420994] Procesando Sample1.fastq...
+[Proceso 3420994] Sample1.fastq completado: 100000 -> 9088 líneas
+srun: Job 12527 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=12527.5
+[Proceso 3421014] Procesando Sample4.fastq...
+[Proceso 3421014] Sample4.fastq completado: 100000 -> 9088 líneas
+
+Todos los ficheros procesados. Renombrando...
+
+Renombrado: Sample1.fastq.tmp -> Sample1.fastq
+Renombrado: Sample2.fastq.tmp -> Sample2.fastq
+Renombrado: Sample3.fastq.tmp -> Sample3.fastq
+Renombrado: Sample4.fastq.tmp -> Sample4.fastq
+
+Ficheros FASTQ después del corte:
+-rw-rw-r--. 1 alumno11 alumno11 319K dic 13 13:55 Sample1.fastq
+-rw-rw-r--. 1 alumno11 alumno11 285K dic 13 13:53 Sample2.fastq
+-rw-rw-r--. 1 alumno11 alumno11 319K dic 13 13:53 Sample3.fastq
+-rw-rw-r--. 1 alumno11 alumno11 291K dic 13 13:55 Sample4.fastq
+
+==========================================
+Fecha fin: sáb dic 13 13:55:23 CET 2025
+Trabajo completado
+==========================================
